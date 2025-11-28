@@ -41,10 +41,10 @@ export function Header({ language, setLanguage }: HeaderProps) {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-              <span className="text-xl font-bold text-primary-foreground">POS</span>
+            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary overflow-hidden">
+              <img src="/web-app-manifest-512x512.png" alt="BiSoft Logo" className="h-10 w-10 object-cover" />
             </div>
-            <span className="text-xl font-bold text-foreground">RestaurantPOS</span>
+            <span className="text-xl font-bold text-foreground">BiSoft</span>
           </div>
 
           {/* Desktop Navigation */}
