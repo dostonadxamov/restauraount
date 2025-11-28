@@ -1,0 +1,113 @@
+import { Card, CardContent } from "@/components/ui/card"
+import { ShoppingCart, Users, BarChart3, Smartphone, Utensils, CreditCard } from "lucide-react"
+
+interface ServicesSectionProps {
+  language: "uz" | "ru"
+}
+
+const translations = {
+  uz: {
+    title: "Bizning Xizmatlarimiz",
+    subtitle: "Restoran biznesingiz uchun to'liq yechimlar",
+    services: [
+      {
+        icon: ShoppingCart,
+        title: "POS Tizimi",
+        description: "Zamonaviy va oson foydalaniladigan kassa tizimi",
+      },
+      {
+        icon: Users,
+        title: "Mijozlar Boshqaruvi",
+        description: "CRM tizimi va sodiqlik dasturlari",
+      },
+      {
+        icon: BarChart3,
+        title: "Analitika va Hisobotlar",
+        description: "Real vaqtda biznes ko'rsatkichlari",
+      },
+      {
+        icon: Smartphone,
+        title: "Mobil Ilova",
+        description: "Android va iOS uchun mobil dastur",
+      },
+      {
+        icon: Utensils,
+        title: "Menyu Boshqaruvi",
+        description: "Oson menyu yaratish va tahrirlash",
+      },
+      {
+        icon: CreditCard,
+        title: "To'lov Tizimlari",
+        description: "Barcha to'lov usullari integratsiyasi",
+      },
+    ],
+  },
+  ru: {
+    title: "Наши Услуги",
+    subtitle: "Полные решения для ресторанного бизнеса",
+    services: [
+      {
+        icon: ShoppingCart,
+        title: "POS Система",
+        description: "Современная и простая в использовании кассовая система",
+      },
+      {
+        icon: Users,
+        title: "Управление Клиентами",
+        description: "CRM система и программы лояльности",
+      },
+      {
+        icon: BarChart3,
+        title: "Аналитика и Отчеты",
+        description: "Бизнес-показатели в реальном времени",
+      },
+      {
+        icon: Smartphone,
+        title: "Мобильное Приложение",
+        description: "Мобильное приложение для Android и iOS",
+      },
+      {
+        icon: Utensils,
+        title: "Управление Меню",
+        description: "Легкое создание и редактирование меню",
+      },
+      {
+        icon: CreditCard,
+        title: "Платежные Системы",
+        description: "Интеграция всех способов оплаты",
+      },
+    ],
+  },
+}
+
+export function ServicesSection({ language }: ServicesSectionProps) {
+  const t = translations[language]
+
+  return (
+    <section id="services" className="py-20 md:py-32">
+      <div className="container mx-auto px-4">
+        <div className="mb-16 text-center">
+          <h2 className="mb-4 text-3xl font-bold text-foreground md:text-5xl text-balance">{t.title}</h2>
+          <p className="text-lg text-muted-foreground md:text-xl text-pretty">{t.subtitle}</p>
+        </div>
+
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {t.services.map((service, index) => {
+            const Icon = service.icon
+            return (
+              <Card key={index} className="group border-2 transition-all hover:border-primary hover:shadow-lg">
+                <CardContent className="p-6">
+                  <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
+                    <Icon className="h-7 w-7" />
+                  </div>
+                  <h3 className="mb-2 text-xl font-bold text-foreground">{service.title}</h3>
+                  <p className="text-muted-foreground">{service.description}</p>
+                </CardContent>
+              </Card>
+            )
+          })}
+        </div>
+      </div>
+    </section>
+  )
+}
