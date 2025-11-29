@@ -128,7 +128,7 @@ export function Footer({ language }: FooterProps) {
             <h3 className="mb-4 text-lg font-bold text-foreground">{t.followUs}</h3>
             <div className="flex gap-3">
               <a
-                href="#"
+                href="https://t.me/bisoftuz"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
@@ -144,7 +144,7 @@ export function Footer({ language }: FooterProps) {
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://youtube.com/bisoftuz"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
@@ -152,7 +152,7 @@ export function Footer({ language }: FooterProps) {
                 <Youtube className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/profile.php?id=61577380953967"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
@@ -164,7 +164,7 @@ export function Footer({ language }: FooterProps) {
         </div>
 
         <div className="mt-12 border-t border-border pt-8 text-center">
-          <p className="text-sm text-muted-foreground">© 2025 BISOFT - DASTURLASH KOMPANIYASI</p>
+          <p className="text-sm text-muted-foreground">© 2025 BISOFT - DASTURLASH KOMPANIYASI Barcha huquqlar himoyalangan</p>
         </div>
       </div>
     </footer>
