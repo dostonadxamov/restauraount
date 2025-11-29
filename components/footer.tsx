@@ -128,7 +128,7 @@ export function Footer({ language }: FooterProps) {
             <h3 className="mb-4 text-lg font-bold text-foreground">{t.followUs}</h3>
             <div className="flex gap-3">
               <a
-                href="https://t.me/yourchanne"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
@@ -144,7 +144,7 @@ export function Footer({ language }: FooterProps) {
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="https://youtube.com/yourchannel"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
@@ -152,7 +152,7 @@ export function Footer({ language }: FooterProps) {
                 <Youtube className="h-5 w-5" />
               </a>
               <a
-                href="https://facebook.com/yourpage"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
