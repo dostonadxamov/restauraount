@@ -42,16 +42,18 @@ export function Footer({ language }: FooterProps) {
   }
 
   return (
-    <footer className="border-t border-border bg-muted/30">
+    <footer id="contact" className="border-t border-border bg-muted/30">
       <div className="container mx-auto px-4 py-12">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
             <div className="mb-4 flex items-center gap-2">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-                <span className="text-xl font-bold text-primary-foreground">POS</span>
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary overflow-hidden">
+                  <img src="/web-app-manifest-512x512.png" alt="BiSoft Logo" className="h-10 w-10 object-cover" />
+                </div>
               </div>
-              <span className="text-xl font-bold text-foreground">RestaurantPOS</span>
+              <span className="text-xl font-bold text-foreground">BiSoft</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">{t.description}</p>
           </div>
@@ -108,13 +110,13 @@ export function Footer({ language }: FooterProps) {
             <h3 className="mb-4 text-lg font-bold text-foreground">{t.contact}</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <a href="tel:+998901234567" className="transition-colors hover:text-primary">
-                  +998 90 123 45 67
+                <a href="tel:+998701131177" className="transition-colors hover:text-primary">
+                  +998 70 113 11 77
                 </a>
               </li>
               <li>
-                <a href="mailto:info@restaurantpos.uz" className="transition-colors hover:text-primary">
-                  info@restaurantpos.uz
+                <a href="mailto:bisoftuz@gmail.com" className="transition-colors hover:text-primary">
+                  bisoftuz@gmail.com
                 </a>
               </li>
               <li>{language === "uz" ? "Toshkent, O'zbekiston" : "Ташкент, Узбекистан"}</li>
@@ -162,7 +164,7 @@ export function Footer({ language }: FooterProps) {
         </div>
 
         <div className="mt-12 border-t border-border pt-8 text-center">
-          <p className="text-sm text-muted-foreground">© 2025 RestaurantPOS. {t.rights}</p>
+          <p className="text-sm text-muted-foreground">© 2025 BISOFT - DASTURLASH KOMPANIYASI</p>
         </div>
       </div>
     </footer>

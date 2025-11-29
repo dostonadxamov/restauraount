@@ -183,8 +183,8 @@ export function ContactSection({ language }: ContactSectionProps) {
                     </div>
                     <div>
                       <div className="font-medium text-foreground">{t.phoneLabel}</div>
-                      <a href="tel:+998901234567" className="text-muted-foreground hover:text-primary">
-                        +998 90 123 45 67
+                      <a href="tel:+998701131177" className="text-muted-foreground hover:text-primary">
+                        +998 70 113 11 77
                       </a>
                     </div>
                   </div>
@@ -195,8 +195,8 @@ export function ContactSection({ language }: ContactSectionProps) {
                     </div>
                     <div>
                       <div className="font-medium text-foreground">{t.emailLabel}</div>
-                      <a href="mailto:info@restaurantpos.uz" className="text-muted-foreground hover:text-primary">
-                        info@restaurantpos.uz
+                      <a href="mailto:bisoftuz@gmail.com" className="text-muted-foreground hover:text-primary">
+                         bisoftuz@gmail.com
                       </a>
                     </div>
                   </div>

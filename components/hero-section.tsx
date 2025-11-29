@@ -26,11 +26,18 @@ const translations = {
 export function HeroSection({ language }: HeroSectionProps) {
   const t = translations[language]
 
-  const scrollToContact = () => {
-    const element = document.getElementById("contact")
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-    }
+  // Scroll specifically to the footer element (not to any other element with id="contact")
+  const scrollToFooter = () => {
+    // Prefer footer with id="contact" if present, otherwise the first footer element
+    const footer = document.querySelector('footer#contact') || document.querySelector('footer')
+    if (!footer) return
+
+    // Account for sticky header height so footer isn't hidden under it
+    const header = document.querySelector('header')
+    const headerHeight = header ? header.getBoundingClientRect().height : 0
+
+    const top = footer.getBoundingClientRect().top + window.scrollY - headerHeight - 8
+    window.scrollTo({ top, behavior: 'smooth' })
   }
 
   return (
@@ -45,7 +52,7 @@ export function HeroSection({ language }: HeroSectionProps) {
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button
               size="lg"
-              onClick={scrollToContact}
+              onClick={scrollToFooter}
               className="bg-background text-foreground hover:bg-background/90 text-base font-semibold"
             >
               {t.cta}
@@ -65,7 +72,7 @@ export function HeroSection({ language }: HeroSectionProps) {
         <div className="mt-16 flex justify-center">
           <div className="relative w-full max-w-5xl">
             <div className="aspect-video overflow-hidden rounded-xl border-4 border-primary-foreground/20 bg-background shadow-2xl">
-              <img src="/restaurant-pos-dashboard.png" alt="POS System Dashboard" className="h-full w-full object-cover" />
+              <img src="/images.png" alt="POS System Dashboard" className="h-full w-full object-cover" />
             </div>
           </div>
         </div>
