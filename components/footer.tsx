@@ -8,7 +8,7 @@ interface FooterProps {
 
 const translations = {
   uz: {
-    description: "Kafe va restoran biznesingiz uchun professional dasturiy ta'minot",
+    description: "Biznesingiz uchun professional dasturiy ta'minot",
     quickLinks: "Tezkor Havolalar",
     services: "Xizmatlar",
     advantages: "Afzalliklar",

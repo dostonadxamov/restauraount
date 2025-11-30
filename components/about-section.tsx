@@ -7,7 +7,7 @@ interface AboutSectionProps {
 const translations = {
   uz: {
     title: "Biz Haqimizda",
-    subtitle: "Restoran biznesini rivojlantirishga yordam beramiz",
+    subtitle: "Biznesingizni rivojlantirishga va savdoyingizni oshirishga yordam beramiz.",
     description:
       "Biz 10 yildan ortiq vaqt davomida kafe, restoran, fast-food va ovqatlanish shaxobchalari uchun professional dasturiy ta'minot ishlab chiqamiz va sotamiz. Bizning maqsadimiz - mijozlarimizning biznesini avtomatlashtirish va samaradorligini oshirish.",
     stats: [

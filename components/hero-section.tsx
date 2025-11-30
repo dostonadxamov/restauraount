@@ -9,7 +9,7 @@ interface HeroSectionProps {
 
 const translations = {
   uz: {
-    title: "Kafe va Restoran Biznesingiz uchun Professional Dasturiy Ta'minot",
+    title: " Biznesingiz uchun Professional Dasturiy Ta'minot",
     subtitle:
       "Biznesingizni avtomatlashtiring va samaradorlikni oshiring. 10 yillik tajriba va 24/7 qo'llab-quvvatlash bilan.",
     cta: "Bepul Konsultatsiya",
