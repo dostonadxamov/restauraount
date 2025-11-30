@@ -8,12 +8,11 @@ const translations = {
   uz: {
     title: "Biz Haqimizda",
     subtitle: "Biznesingizni rivojlantirishga va savdoyingizni oshirishga yordam beramiz.",
-    description:
-      "Biz 10 yildan ortiq vaqt davomida kafe, restoran, fast-food va ovqatlanish shaxobchalari uchun professional dasturiy ta'minot ishlab chiqamiz va sotamiz. Bizning maqsadimiz - mijozlarimizning biznesini avtomatlashtirish va samaradorligini oshirish.",
+    description: "Biz 5 yildan ortiq vaqt davomida 500+ yirik kompaniyalar uchun professional dasturiy ta'minotimiz bilan xizmat ko'rsatib kelmoqdamiz. Bizning maqsadimiz - mijozlarimizning biznesini avtomatlashtirish va samaradorligini oshirish.",
     stats: [
       { icon: Building2, value: "500+", label: "Faol Mijozlar" },
       { icon: Users2, value: "50+", label: "Mutaxassislar" },
-      { icon: Award, value: "10+", label: "Yillik Tajriba" },
+      { icon: Award, value: "5+", label: "Yillik Tajriba" },
       { icon: TrendingUp, value: "98%", label: "Mijozlar Qoniqishi" },
     ],
   },
